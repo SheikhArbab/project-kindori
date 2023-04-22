@@ -15,3 +15,29 @@ window.addEventListener("scroll", () => {
         totop.classList.remove("active");
     }
 })
+
+
+
+
+
+// Get the dropdown button and content
+var dropdownBtn = document.getElementsByClassName("dropbtn")[0];
+var dropdownContent = document.getElementsByClassName("dropdown-content")[0];
+
+// Toggle the dropdown content when the button is clicked
+dropdownBtn.addEventListener("click", function() {
+  dropdownContent.classList.toggle("show");
+});
+
+// Close the dropdown content if the user clicks outside of it
+window.addEventListener("click", function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+});

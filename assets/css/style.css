@@ -16,9 +16,11 @@
     list-style: none;
 }
 
-body{
-    font-family: var(--main-font)
 
+body{
+    font-family: var(--main-font);
+overflow: hidden;
+overflow-y: auto;
 }
 
 #preloader {
@@ -40,13 +42,281 @@ body{
     object-fit: cover;
     object-position: center center;
   }
+
+/* -----------------------utility------------------ */
+
+.container{
+  width: 1170px;
+  margin: 0% auto;
+}
+.d-flex{
+  display: flex;
+}
+.f-wrap{
+  flex-wrap: wrap;
+}
+.align-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.m-r-1{
+  margin: 0 1rem;
+}
+.m-l-1{
+  margin: 0 1rem;
+}
+.m-x-1{
+  margin: 0 1rem;
+}
+.c-p{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* -----------------------utility------------------ */
   
+/* ---------------------header------------------------- */
+
+/* ------------------------link-nav--------------------- */
+.link-nav{
+  background-color: var(--primary);
+  padding: 1rem 0;
+}
+
+
+.link-nav .right a{
+  width: 40px;
+  height: 40px;
+  background-color:var(--blue);
+  border-radius: 50%;
+  margin-left: .8rem;
+}
+.link-nav .right a:nth-child(2){
+  background-color:var(--yellow);
+}
+.link-nav .right a:nth-child(3){
+  background-color:var(--secondary);
+}
+.link-nav .right a:nth-child(4){
+  background-color:var(--green);
+}
+.link-nav .right a img{
+  width: 16px;
+}
+
+.link-nav ul li .left-nav-content img{
+width: 16px;
+}
+.link-nav ul li .left-nav-content a{
+color: white;
+font-size: 16px;
+}
+/* ------------------------link-nav--------------------- */
+/* ------------------------primary-nav--------------------- */
+.primary-nav{
+  box-shadow: 0 .1px 8px black;
+  padding: 16px 0;
+  text-transform: capitalize;
+  position: sticky;
+}
+
+.logo{
+  width: 150px;
+}
+
+.primary-nav a{
+  color: black;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+.dropdown {
+  position: relative;
+  
+  display: inline-block;
+}
+
+.dropbtn{
+  font-weight: 600;
+  background-color: transparent;
+  color: black;
+  text-transform: capitalize;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.dropbtn:hover{
+  transition: .5s ;
+  background-color: var(--secondary);
+  color: white;
+}
+.dropbtn-active{
+  background-color: var(--secondary);
+  color: white;
+  text-transform: capitalize;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 0px 2px rgb(43, 43, 43);
+  background-color: white;
+  width: 280px;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+.dropdown-content::before{
+ display: block;
+ content:'';
+ position: absolute;
+background-color: transparent;
+border: 2px dashed var(--secondary);
+width: 90%;
+height: 85%;
+top: 7%;
+left: 4%;
+border-radius: 4px;
+opacity: 40%;
+}
+
+.dropdown-content a {
+  color: rgba(28, 28, 28, 0.873);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search-li{
+background-color: var(--secondary);  
+width: 45px;
+height: 45px;
+border-radius: 50%;
+padding: 0%;
+position: relative;
+}
+.search-li::before{
+border: 2px dashed var(--secondary);
+content: '';
+display: block;
+background-color: transparent;
+position: absolute;
+width: 52px;
+height: 52px;
+border-radius: 50%;
+top: 49%;
+left: 49%;
+transform: translate(-50%, -50%);
+}
+.search img{
+width: 16px;
+
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* ------------------------primary-nav--------------------- */
+/* ---------------------header------------------------- */
+/* ---------------------hero------------------------- */
+.hero{
+  background: url(../imgs/hero/hero.jpg) no-repeat top right;
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.hero .element{
+ padding: 0 2rem ;
+}
+.hero-content{
+  width: fit-content;
+  background-color: #abcd52;
+  position: absolute;
+  bottom: 0%;
+  left: 3rem;
+}
+.hero-content h1{
+  color: var(--primary);
+font-size: 52px;
+padding: 1rem 0;
+font-weight: bolder;
+}
+.hero-content h2{
+  color: var(--secondary);
+font-family: var(--italic-font);
+font-size: 25px;
+}
+.hero-content p{
+  font-size:18px;
+  line-height: 1.6rem;
+ color: rgba(27, 27, 27, 0.611);
+}
+.hero-btn a{
+  background-color: var(--secondary);
+  margin-top: 1rem;
+  width: fit-content;
+  border-radius: 12px;
+padding: 1rem;
+color: white;
+font-weight: bold;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------hero------------------------- */
 
 
 
