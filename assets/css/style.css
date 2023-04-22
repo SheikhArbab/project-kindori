@@ -1,3 +1,14 @@
+:root {
+    --primary: #271344;
+    --secondary: #ff4880;
+    --green: #abcd52;
+    --blue: #1ab9ff;
+    --yellow: #ffc000;
+    --dark-purple: #271344;
+    --main-font: 'Fredoka', sans-serif;
+    --italic-font:'Schoolbell', sans-serif;
+  }
+
 * {
     margin: 0%;
     padding: 0;
@@ -5,6 +16,31 @@
     list-style: none;
 }
 
+body{
+    font-family: var(--main-font)
+
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #preloader img {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
 
 
 
@@ -16,16 +52,58 @@
 
 
 
+/* -------------------scroll_btn----------------- */
+.to-top {
+    position: fixed;
+    background: var(--secondary);
+    border-radius: 25px;
+    width: fit-content;
+    height: fit-content;
+    right: 32px;
+    bottom: 100px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 14px;
+    z-index: 111111;
+}
+
+
+.to-top.active {
+    bottom: 10%;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.arrow {
+    width: 20px;
+    margin-right: 6px;
+}
+
+/* -------------------scroll_btn----------------- */
 
 
 
+
+
+
+
+
+
+/* ------------------breakpoints-------------- */
 
 
 
 /* // `xs` returns only a ruleset and no media query */
-// ... { 
+/* // ... { 
 
-}
+} */
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -51,3 +129,4 @@
 @media (max-width: 1399.98px) {
     
 }
+/* ------------------breakpoints-------------- */
