@@ -41,43 +41,5 @@ window.addEventListener("scroll", function() {
 
 
 
-// Show/hide submenu on click (for mobile devices)
-document.querySelector('.menu-icon').addEventListener('click', function() {
-  document.querySelector('.menu').classList.toggle('show');
-});
-
-// Hide submenu on mouse leave (for desktop devices)
-document.querySelectorAll('.menu > li').forEach(function(li) {
-  li.addEventListener('mouseleave', function() {
-    this.querySelector('.submenu').classList.remove('show');
-  });
-});
-
-// Show submenu on mouse enter (for desktop devices)
-document.querySelectorAll('.menu > li').forEach(function(li) {
-  li.addEventListener('mouseenter', function() {
-    this.querySelector('.submenu').classList.add('show');
-  });
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
