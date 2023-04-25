@@ -20,27 +20,6 @@ window.addEventListener("scroll", () => {
 
 
 
-// Get the dropdown button and content
-var dropdownBtn = document.getElementsByClassName("dropbtn")[0];
-var dropdownContent = document.getElementsByClassName("dropdown-content")[0];
-
-// Toggle the dropdown content when the button is clicked
-dropdownBtn.addEventListener("click", function() {
-  dropdownContent.classList.toggle("show");
-});
-
-// Close the dropdown content if the user clicks outside of it
-window.addEventListener("click", function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-});
 
 
 
@@ -55,4 +34,50 @@ window.addEventListener("scroll", function() {
     navbar.classList.remove("fixed");
   }
 });
+
+
+
+
+
+
+
+// Show/hide submenu on click (for mobile devices)
+document.querySelector('.menu-icon').addEventListener('click', function() {
+  document.querySelector('.menu').classList.toggle('show');
+});
+
+// Hide submenu on mouse leave (for desktop devices)
+document.querySelectorAll('.menu > li').forEach(function(li) {
+  li.addEventListener('mouseleave', function() {
+    this.querySelector('.submenu').classList.remove('show');
+  });
+});
+
+// Show submenu on mouse enter (for desktop devices)
+document.querySelectorAll('.menu > li').forEach(function(li) {
+  li.addEventListener('mouseenter', function() {
+    this.querySelector('.submenu').classList.add('show');
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
