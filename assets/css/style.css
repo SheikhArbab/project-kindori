@@ -90,7 +90,7 @@ body {
 }
 
 .icons li:hover img {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 
 /* --------------------primary-nav------------------------- */
@@ -127,8 +127,13 @@ body {
   width: 170px;
 }
 
-.primary-nav .container>ul {
-  width: 65%;
+
+.primary-nav .container ul li {
+  margin-left: 10px;
+}
+
+.primary-nav #navbarSupportedContent {
+justify-content:flex-end !important;
 }
 
 
@@ -259,7 +264,7 @@ a:hover {
 .hero {
   background: url(../imgs/hero/hero.jpg) no-repeat center;
   background-size: cover;
-  width: 99vw;
+  width: 99.5vw;
   height: 100vh;
 }
 
@@ -406,6 +411,8 @@ a:hover {
   transition: 0.6s;
   z-index: 111;
   background-color: #ff2a6a;
+  margin: 12px !important;
+
 }
 
 .value-card-2 {
@@ -528,8 +535,12 @@ a:hover {
 .value-bottom .btn {
   background-color: var(--secondary);
   color: white;
-  padding: 10px 12px !important;
+  padding: 20px 12px !important;
   position: relative;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .value-bottom .btn::before {
@@ -1871,13 +1882,57 @@ background-color: white;
   } */
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+  
+  .hero-content h6 {
+    font-size: 1.4rem;
+  }
+  
+  .hero-content p {
+    font-size: .8rem;
+    color: rgb(105, 105, 105);
+  }
+  
+  .btn {
+    font-size: 10px;
+    padding: 8px 10px !important;
+  }
+  .value-card figure {
+    width: 120px;
+    height: 120px;
+  }
+}
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {}
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+  .primary-nav .container ul {
+flex-direction: column;
+align-items: self-start;
+padding-top: 12px !important;
+padding-left: 12px !important;
+  }
+  .primary-nav .container ul li:last-child {
+    margin:0 12px !important;
+  
+  }
+  .primary-nav .container ul li{
+   margin:4px  0%;
+  }
+  .link-nav-hide{
+    display: none !important;
+  }
+
+
+
+
+  
+}
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {}

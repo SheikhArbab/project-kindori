@@ -20,14 +20,15 @@
 
 <body>
   <div class="site-wrapper">
-    <div id="preloader">
+    <!-- <div id="preloader">
         <img src="./assets/imgs/pre_loader.gif" alt="Loading...">
-    </div><!--preloader-->
+    </div> -->
+    <!--preloader-->
 
     <header id="header">
       <nav class="link-nav  m-0 d-flex py-3">
         <div class=" p-0 container d-flex justify-content-between align-items-center">
-          <ul class=" p-0 m-0 d-flex justify-content-center align-items-center">
+          <ul class="link-nav-hide p-0 m-0 d-flex justify-content-center align-items-center">
 
             <li class="d-flex justify-content-center align-items-center me-4">
               <img class="me-2" src="./assets/imgs/icons/smartphone.png" alt="">
@@ -60,124 +61,131 @@
         </div><!--container-->
       </nav><!--link-nav-->
 
-      <nav class="primary-nav py-3 d-flex align-center justify-content-center">
-        <div class="container p-0 m-0 d-flex align-center justify-content-between">
+      <nav class="primary-nav py-3 d-flex align-center justify-content-center navbar navbar-expand-lg p-0 m-0 d-flex ">
+        <div class="container d-flex align-center justify-content-between p-0">
+            
           <figure class="logo m-0">
             <img src="./assets/imgs/logo/logo.webp" alt="">
           </figure><!--logo-->
-          <ul class="p-0 m-0 d-flex align-center justify-content-between">
-            <li class="m-0">
-
-              <div class="dropdown ">
-                <button class="dropbtn rounded-2 dropbtn-active">home</button>
-                <div class="dropdown-content">
-                  <a class="a-active" href="#"> <img class="drop-img" src="./assets/imgs/right arrow.png" alt=""> Home 1
-                    - Multi Page</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Home 1 - One Page</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Home 2 - Multi Page</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Home 2 - One Page</a>
-                </div>
-              </div><!--dropdown-->
-
-
-            </li>
-            <li>
-              <div class="dropdown">
-                <button class="dropbtn rounded-2">Pages</button>
-                <div class="dropdown-content">
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> About Us</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Programs</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Pricing</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Gallery</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Enrollment Now!</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Testimonials</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Contact Us</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Page - 404</a>
-                </div>
-              </div><!--dropdown-->
-            </li>
-            <li>
-
-
-
-              <div class="dropdown">
-                <button class="dropbtn rounded-2"> Classes</button>
-                <div class="dropdown-content">
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Classes</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Classes Single</a>
-                </div>
-              </div><!--dropdown-->
-            </li>
-            <li>
-
-
-
-              <div class="dropdown">
-                <button class="dropbtn rounded-2"> Events</button>
-                <div class="dropdown-content">
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Events</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Events Single</a>
-                </div>
-              </div><!--dropdown-->
-            </li>
-            <li>
-
-
-
-              <div class="dropdown">
-                <button class="dropbtn rounded-2">
-                  Teacher</button>
-                <div class="dropdown-content">
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Our Teacher</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Teacher Single</a>
-                </div>
-              </div><!--dropdown-->
-            </li>
-            <li>
-
-
-
-              <div class="dropdown">
-                <button class="dropbtn rounded-2">
-                  Shop
-
-
-                </button>
-                <div class="dropdown-content">
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Shop Default</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Shop Single</a>
-                </div>
-              </div><!--dropdown-->
-            </li>
-            <li>
-
-
-
-
-
-
-
-
-              <div class="dropdown">
-                <button class="dropbtn rounded-2">
-                  Blog
-
-
-                </button>
-                <div class="dropdown-content">
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Blog Grids</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Blog carousel</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt="">Blog Standard</a>
-                  <a href="#"> <img src="./assets/imgs/right arrow.png" alt="">Blog Single</a>
-                </div>
-              </div><!--dropdown-->
-            </li>
-            <li class="search-con  rounded-5 d-flex align-items-center justify-content-center">
-              <img class="" src="./assets/imgs/icons/search.png" alt="">
-            </li>
-          </ul>
-        </div><!--container-->
-      </nav><!--primary-nav-->
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="p-0 m-0 ms-auto d-flex align-center justify-content-between">
+                <li class="m-0">
+    
+                  <div class="dropdown ">
+                    <button class="dropbtn rounded-2 dropbtn-active">home</button>
+                    <div class="dropdown-content">
+                      <a class="a-active" href="#"> <img class="drop-img" src="./assets/imgs/right arrow.png" alt=""> Home 1
+                        - Multi Page</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Home 1 - One Page</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Home 2 - Multi Page</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Home 2 - One Page</a>
+                    </div>
+                  </div><!--dropdown-->
+    
+    
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="dropbtn rounded-2">Pages</button>
+                    <div class="dropdown-content">
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> About Us</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Programs</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Pricing</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Gallery</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Enrollment Now!</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Testimonials</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Contact Us</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Page - 404</a>
+                    </div>
+                  </div><!--dropdown-->
+                </li>
+                <li>
+    
+    
+    
+                  <div class="dropdown">
+                    <button class="dropbtn rounded-2"> Classes</button>
+                    <div class="dropdown-content">
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Classes</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Classes Single</a>
+                    </div>
+                  </div><!--dropdown-->
+                </li>
+                <li>
+    
+    
+    
+                  <div class="dropdown">
+                    <button class="dropbtn rounded-2"> Events</button>
+                    <div class="dropdown-content">
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Events</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Events Single</a>
+                    </div>
+                  </div><!--dropdown-->
+                </li>
+                <li>
+    
+    
+    
+                  <div class="dropdown">
+                    <button class="dropbtn rounded-2">
+                      Teacher</button>
+                    <div class="dropdown-content">
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Our Teacher</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Teacher Single</a>
+                    </div>
+                  </div><!--dropdown-->
+                </li>
+                <li>
+    
+    
+    
+                  <div class="dropdown">
+                    <button class="dropbtn rounded-2">
+                      Shop
+    
+    
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Shop Default</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Shop Single</a>
+                    </div>
+                  </div><!--dropdown-->
+                </li>
+                <li>
+    
+    
+    
+    
+    
+    
+    
+    
+                  <div class="dropdown">
+                    <button class="dropbtn rounded-2">
+                      Blog
+    
+    
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Blog Grids</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt=""> Blog carousel</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt="">Blog Standard</a>
+                      <a href="#"> <img src="./assets/imgs/right arrow.png" alt="">Blog Single</a>
+                    </div>
+                  </div><!--dropdown-->
+                </li>
+                <li class="search-con  rounded-5 d-flex align-items-center justify-content-center">
+                  <img class="" src="./assets/imgs/icons/search.png" alt="">
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="hero">
@@ -220,7 +228,7 @@
               <img src="./assets/imgs/image-bee.webp" alt="">
             </div><!--moving-bee-->
           </div><!--top-content-->
-          <div class="value-card-wrapper d-flex align-center justify-content-between flex-wrap pt-5">
+          <div class="value-card-wrapper d-flex flex-wrap align-center justify-content-center flex-wrap pt-5">
             <div class="value-card text-center p-4">
               <figure class="mx-auto">
                 <img src="./assets/imgs/fcb/image-fcb-1.webp" alt="">
@@ -256,7 +264,7 @@
                 accessible.</p>
             </div><!--value-card-->
           </div><!--value-card-wrapper-->
-          <div class="value-bottom d-flex align-items-center justify-content-between">
+          <div class="value-bottom d-flex flex-wrap align-items-center justify-content-between">
             <div class="value-bottom-content pt-5">
               <h2><span> How To </span>Let Your Child Study At Kindori?</h2>
               <p>Let your child attend Kindori Kindergarten to help your child develop comprehensively in all aspects.
@@ -265,7 +273,7 @@
 
 
 
-            <a href="" class="btn m-0 p-0 rounded-3">
+            <a href="" class="btn rounded-3">
               Enrollment Now!
 
             </a><!--btn-->
@@ -974,7 +982,7 @@ Read more <img src="./assets/imgs/right arrow.png" alt="">
 
 
     <div class="footer-top py-4">
-      <div class="container d-flex align-item-center justify-content-between pt-3">
+      <div class="container d-flex flex-wrap align-item-center justify-content-between pt-3">
         <div class="text-box">
       <h2>HOW TO ENROLL YOUR CHILD TO A CLASS?</h2>
       <p>Interested in good preschool education for your child? Our kindergarten is the right decision!</p>
@@ -995,7 +1003,7 @@ Read more <img src="./assets/imgs/right arrow.png" alt="">
 
       
 
-      <div class="container d-flex align-item-center justify-content-between py-5">
+      <div class="container d-flex flex-wrap align-item-center justify-content-between py-5">
         <div class="logo-box mb-2">
           <img class="d-block" src="./assets/imgs/logo/logo-footer.webp" alt="">
           <p class="my-4">Come visit The Kindori Kindergarten <br> for yourself so you can tour the <br> rooms and meet
@@ -1077,10 +1085,10 @@ Read more <img src="./assets/imgs/right arrow.png" alt="">
 
 
       <div class="footer-bottom  pt-4 m-0">
-        <div class="container d-flex align-item-center justify-content-between ">
+        <div class="container d-flex flex-wrap align-item-center justify-content-between ">
           <h6 class="m-0 p-0">© 2022 Kindori, All Rights Reserved. With love by <a class="p-0"
               href="">CMSSuperHeroes.</a></h6>
-          <ul class="d-flex align-item-center justify-content-center">
+          <ul class="d-flex align-item-center justify-content-center p-0 m-0">
             <li> <a class="p-0 m-0" href="">Sitemap. </a> </li>
             <li> <a class="p-0 m-0 ms-2" href="">Terms of Service </a> </li>
           </ul>
