@@ -2542,6 +2542,10 @@ background-color: white;
   width: 98% !important;
 }
 
+.footer-icons li img {
+  width: 14px;
+}
+
 }
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
