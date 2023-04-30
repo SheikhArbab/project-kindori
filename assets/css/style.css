@@ -264,7 +264,7 @@ a:hover {
 .hero {
   background: url(../imgs/hero/hero.jpg) no-repeat center;
   background-size: cover;
-  width: 99.3vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -304,6 +304,8 @@ a:hover {
   position: absolute;
   top: 0%;
   animation: cloud 5s linear infinite;
+  background-color: #1ab9ff;
+  display: none;
 }
 
 @keyframes cloud {
@@ -701,7 +703,7 @@ color: var(--primary);
 }
 
 .image-home-1 {
-  width: 300px;
+  width: 80%;
   height: 150px;
   position: relative;
 }
@@ -1550,7 +1552,7 @@ font-weight: lighter;
 .grass-ratings>.grass-bg{
 background: url(../imgs/bg_rating.webp)no-repeat center;
 background-size: 175%;
-width: 99.9vw;
+width: 100%;
 height: fit-content;
 padding: 60px 0;
 background-color: #abcd52;
@@ -1599,7 +1601,7 @@ color: white;
   background: url(../imgs/teachers_bg.jpg)no-repeat center right ;
   background-attachment: fixed;
   background-size: 100%;
-  width: 100vw;
+  width: 100%;
   height: fit-content;
 }
 .teachers .container .btn{
@@ -2513,10 +2515,34 @@ background-color: white;
       }
 
 
-
-
+      .teachers-card-wrapper> .teachers-card{
+        width: 90%;
+      }
+      .teachers-card-wrapper> .teachers-card>img{
+        width: 90%;
+        }
+        .teachers-card-wrapper > .teachers-card > ul {
+          padding: 30px 10%;
+      
 }
 
+.teachers-card-wrapper> .teachers-card>ul li {
+  width: 26px;
+  height: 26px;
+}
+.program .content h1 {
+  font-size: 2rem;
+}
+.rocket {
+  width: 50%;
+}
+
+
+.logo-box img {
+  width: 98% !important;
+}
+
+}
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
