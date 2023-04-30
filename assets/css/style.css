@@ -703,9 +703,10 @@ color: var(--primary);
 }
 
 .image-home-1 {
-  width: 80%;
+  width: 350px;
   height: 150px;
-  position: relative;
+  position: absolute;
+  bottom:70px;
 }
 
 .image-home-1>img {
@@ -2545,6 +2546,11 @@ background-color: white;
 .footer-icons li img {
   width: 16px !important;
 }
+
+.image-home-1>img {
+  width: 50%;
+}
+
 
 }
 
