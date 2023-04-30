@@ -17,7 +17,13 @@ window.addEventListener("scroll", () => {
 })
 
 
-
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 
 
@@ -46,7 +52,7 @@ $('.owl-carousel').owlCarousel({
   margin:20,
 autoplay:true,
 autoplayTimeout:2500,
-stagePadding:50,
+stagePadding:40,
   nav:true,
   responsive:{
       0:{

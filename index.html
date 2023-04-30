@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
   <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -65,9 +66,10 @@
       <nav class="primary-nav py-3 d-flex align-center justify-content-center navbar navbar-expand-lg p-0 m-0 d-flex ">
         <div class="container d-flex align-center justify-content-between p-0">
 
-          <figure class="logo m-0">
+          <a class="logo m-0 p-0" href="https://sheikharbab.github.io/project-kindori/">
             <img src="./assets/imgs/logo/logo.webp" alt="">
-          </figure><!--logo-->
+
+          </a><!--logo-->
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -249,7 +251,7 @@
               <p>Children's meals need to be <br> provided with all the <br> nutrients necessary for a <br> day of play.
               </p>
             </div><!--value-card-->
-            <div  class="value-card value-card-3 text-center p-4">
+            <div class="value-card value-card-3 text-center p-4">
               <figure class="mx-auto">
                 <img src="./assets/imgs/fcb/image-fcb-3.webp" alt="">
               </figure>
@@ -528,7 +530,7 @@
 
       <section class="classes py-5">
         <div class="container">
-          <div  data-aos="zoom-in" class="activites-header pb-5">
+          <div data-aos="zoom-in" class="activites-header pb-5">
             <h6>PLAYING IN LEARNING</h6>
             <h1>Our Classes</h1>
             <p>With kindori, we always put the quality of teaching children first, please rest assured when sending
@@ -751,26 +753,55 @@
 
 
         <div class="container d-flex align-item-center justify-content-between">
-          <div class="owl-carousel owl-theme">
-            <div class="item ">
-              <div class="user d-flex align-item-center   ">
-                <img src="./assets/imgs/testi-5.webp" alt="">
-                <div class="rating">
-                  <h5>Tine Jensen <img src="./assets/imgs/double-quotes.png" alt="" class="double-quotes"></h5>
-                  <img src="./assets/imgs/five=star.png" alt="">
-                </div><!--rating-->
-              </div><!--user-->
 
-              <p>I had both my kids here, and loved it. Made it easy for us to meet <br> a lot of amazing parents and
-                kids. The schol has such a home <br> feel, and values a play based routine. It would be worth your time
-                <br> to visit this places.
-              </p>
-            </div><!--item-->
-          </div>
+
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+<div class="rating-box">
+<div class="rating-box-top">
+<img src="./assets/imgs/testi-5.webp" alt="">
+<h3>Tine Jense</h3>
+</div><!--rating-box-top-->
+
+<p>I had both my kids here, and loved it. Made it easy for us to meet a lot of amazing parents and kids. The school has such a home feel, and values a play based routine. It would be worth your time to visit this placees.</p>
+</div><!--rating-box-->
+<div class="rating-box rating-box-h">
+<div class="rating-box-top">
+<img src="./assets/imgs/testi-6.webp" alt="">
+<h3>Tine Jense</h3>
+</div><!--rating-box-top-->
+
+<p>I had both my kids here, and loved it. Made it easy for us to meet a lot of amazing parents and kids. The school has such a home feel, and values a play based routine. It would be worth your time to visit this placees.</p>
+</div><!--rating-box-->
+              </div><!--swiper-slide"-->
+              <div class="swiper-slide">
+<div class="rating-box">
+<div class="rating-box-top">
+<img src="./assets/imgs/testi-5.webp" alt="">
+<h3>Tine Jense</h3>
+</div><!--rating-box-top-->
+
+<p>I had both my kids here, and loved it. Made it easy for us to meet a lot of amazing parents and kids. The school has such a home feel, and values a play based routine. It would be worth your time to visit this placees.</p>
+</div><!--rating-box-->
+<div class="rating-box rating-box-h ">
+<div class="rating-box-top">
+<img src="./assets/imgs/testi-6.webp" alt="">
+<h3>Tine Jense</h3>
+</div><!--rating-box-top-->
+
+<p>I had both my kids here, and loved it. Made it easy for us to meet a lot of amazing parents and kids. The school has such a home feel, and values a play based routine. It would be worth your time to visit this placees.</p>
+</div><!--rating-box-->
+              </div><!--swiper-slide"-->
+            </div><!--swiper-wrapper-->
+            <div class="swiper-pagination"></div>
+          </div><!--swiper mySwiper-->
+
+
 
 
         </div><!--container-->
-
 
 
 
@@ -824,7 +855,7 @@
 
 
       <section class="teachers py-5">
-        <div data-aos="zoom-in-up" class="activites-header  py-5">
+        <div  class="activites-header  py-5">
           <h6>ABOUT THE TEACHERS</h6>
           <h1>Our Teachers</h1>
           <p>We have an excellent teacher to child ratio at our Kindergarten to ensure that each <br> child receives the
@@ -834,49 +865,49 @@
 
 
 
-       <div class="container text-center">
-        <div class="teachers-card-wrapper d-flex flex-wrap align-item-center justify-content-center">
-          <div class="teachers-card">
-<img src="./assets/imgs/team/team-1-500x445.jpg" alt="">
-<h3>Alice Bohm</h3>
-<h6>Senior Educator</h6>
-<ul class="d-flex align-item-center justify-content-between" >
-  <li><img src="./assets/imgs/icons/social/facebook-app-symbol.png" alt=""></li>
-  <li><img src="./assets/imgs/icons/social/twitter.png" alt=""></li>
-  <li><img src="./assets/imgs/icons/social/instagram-symbol.png" alt=""></li>
-  <li><img src="./assets/imgs/icons/social/skype.png" alt=""></li>
-</ul>
+        <div class="container text-center">
+          <div class="teachers-card-wrapper d-flex flex-wrap align-item-center justify-content-center">
+            <div class="teachers-card">
+              <img src="./assets/imgs/team/team-1-500x445.jpg" alt="">
+              <h3>Alice Bohm</h3>
+              <h6>Senior Educator</h6>
+              <ul class="d-flex align-item-center justify-content-between">
+                <li><img src="./assets/imgs/icons/social/facebook-app-symbol.png" alt=""></li>
+                <li><img src="./assets/imgs/icons/social/twitter.png" alt=""></li>
+                <li><img src="./assets/imgs/icons/social/instagram-symbol.png" alt=""></li>
+                <li><img src="./assets/imgs/icons/social/skype.png" alt=""></li>
+              </ul>
 
-          </div><!--teachers-card-->
-          <div class="teachers-card">
-<img src="./assets/imgs/team/team-2-500x445.jpg" alt="">
-<h3>Fred Lambert</h3>
-<h6>Math Coah</h6>
-<ul class="d-flex align-item-center justify-content-between" >
-  <li><img src="./assets/imgs/icons/social/facebook-app-symbol.png" alt=""></li>
-  <li><img src="./assets/imgs/icons/social/twitter.png" alt=""></li>
-  <li><img src="./assets/imgs/icons/social/instagram-symbol.png" alt=""></li>
-  <li><img src="./assets/imgs/icons/social/skype.png" alt=""></li>
-</ul>
+            </div><!--teachers-card-->
+            <div class="teachers-card">
+              <img src="./assets/imgs/team/team-2-500x445.jpg" alt="">
+              <h3>Fred Lambert</h3>
+              <h6>Math Coah</h6>
+              <ul class="d-flex align-item-center justify-content-between">
+                <li><img src="./assets/imgs/icons/social/facebook-app-symbol.png" alt=""></li>
+                <li><img src="./assets/imgs/icons/social/twitter.png" alt=""></li>
+                <li><img src="./assets/imgs/icons/social/instagram-symbol.png" alt=""></li>
+                <li><img src="./assets/imgs/icons/social/skype.png" alt=""></li>
+              </ul>
 
-          </div><!--teachers-card-->
-          <div class="teachers-card">
-<img src="./assets/imgs/team/team-3-500x445.jpg" alt="">
-<h3>Alice Bohm</h3>
-<h6>Senior Educator</h6>
-<ul class="d-flex align-item-center justify-content-between" >
-  <li><img src="./assets/imgs/icons/social/facebook-app-symbol.png" alt=""></li>
-  <li><img src="./assets/imgs/icons/social/twitter.png" alt=""></li>
-  <li><img src="./assets/imgs/icons/social/instagram-symbol.png" alt=""></li>
-  <li><img src="./assets/imgs/icons/social/skype.png" alt=""></li>
-</ul>
+            </div><!--teachers-card-->
+            <div class="teachers-card">
+              <img src="./assets/imgs/team/team-3-500x445.jpg" alt="">
+              <h3>Alice Bohm</h3>
+              <h6>Senior Educator</h6>
+              <ul class="d-flex align-item-center justify-content-between">
+                <li><img src="./assets/imgs/icons/social/facebook-app-symbol.png" alt=""></li>
+                <li><img src="./assets/imgs/icons/social/twitter.png" alt=""></li>
+                <li><img src="./assets/imgs/icons/social/instagram-symbol.png" alt=""></li>
+                <li><img src="./assets/imgs/icons/social/skype.png" alt=""></li>
+              </ul>
 
-          </div><!--teachers-card-->
-        </div><!--teachers-card-wrapper-->
-        <a data-aos="zoom-in-up" href="" class="btn m-0  px-4 rounded-3 mt-5">
-        View All Teachers
-        </a><!--btn-->
-       </div><!--container-->
+            </div><!--teachers-card-->
+          </div><!--teachers-card-wrapper-->
+          <a data-aos="zoom-in-up" href="" class="btn m-0  px-4 rounded-3 mt-5">
+            View All Teachers
+          </a><!--btn-->
+        </div><!--container-->
 
       </section><!--teachers-->
 
@@ -1153,7 +1184,10 @@
 
       <div class="container d-flex flex-wrap align-item-center justify-content-between py-5">
         <div class="logo-box mb-2">
-          <img class="d-block" src="./assets/imgs/logo/logo-footer.webp" alt="">
+          <a class="logo m-0 p-0" href="https://sheikharbab.github.io/project-kindori/">
+            <img class="d-block" src="./assets/imgs/logo/logo-footer.webp" alt="">
+
+          </a><!--logo-->
           <p class="my-4">Come visit The Kindori Kindergarten <br> for yourself so you can tour the <br> rooms and meet
             some of our <br> educators. We offer high Quality <br> early education.</p>
           <ul class="footer-icons p-0 d-flex flex-wrap align-item-center justify-content-between">
@@ -1216,7 +1250,7 @@
 
 
 
-        <div  data-aos="zoom-in" class="activities-box">
+        <div data-aos="zoom-in" class="activities-box">
           <h3>Activities</h3>
           <ul class="p-0">
             <li> <a href=""> <img src="./assets/imgs/play.png" alt=""> Creative Activites </a></li>
@@ -1265,6 +1299,8 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 
 
