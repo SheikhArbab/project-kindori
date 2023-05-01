@@ -18,7 +18,7 @@
 
 body {
   font-family: var(--main-font);
-  /* overflow: hidden; */
+  overflow: hidden;
   overflow-y: auto;
 }
 
@@ -254,6 +254,27 @@ a:hover {
   position: absolute;
 }
 
+
+
+
+@keyframes slideIn {
+  0% {
+      transform: translateY(1rem);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0rem);
+      opacity: 1;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
 /* --------------------primary-nav------------------------- */
 
 
@@ -304,8 +325,7 @@ a:hover {
   position: absolute;
   top: 0%;
   animation: cloud 5s linear infinite;
-  background-color: #1ab9ff;
-  display: none;
+  display: block;
 }
 
 @keyframes cloud {
@@ -401,7 +421,18 @@ a:hover {
 
 .moving-bee img {
   position: absolute;
-  animation: cloud 5s linear infinite;
+  animation: bee 6s  alternate infinite ;
+  margin: 0% auto;
+}
+
+@keyframes bee{
+  0% {
+      transform: translateX(-80%);
+  }
+
+  100% {
+      transform: translateX(25%);
+  }
 }
 
 .value-card {
@@ -1672,24 +1703,213 @@ background-color: var(--yellow);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+ @-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
 
 
 
 
 /* ------------------------section-teachers---------------------- */
+/* ------------------------section-halloween---------------------- */
+
+.halloween{
+  background-image: linear-gradient(#ff2a6a69,#ff2a6a69),url(../imgs/halloween.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  width: 100vw;
+  height: fit-content;
+  padding: 140px 0 !important;
+  position: relative;
+  color: white;
+}
+.halloween .date-btn{
+ background-color: var(--yellow);
+ border: 2px solid white;
+ color: var(--primary);
+ border-radius: 40px;
+ width: fit-content;
+ height: fit-content;
+ padding: 12px 24px;
+ font-weight: bold;
+ margin: 0% auto;
+ font-size: 1.6rem;
+ word-spacing: 4px;
+	        animation: heartbeat 8s infinite both ;
+}
+.halloween .btn{
+  z-index: 1111 !important;
+}
+.halloween h1{
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 60px;
+}
+
+.halloween::before{
+  z-index: -1;
+ position: absolute;
+ display: block;
+ content: '';
+ background-color: #ff619191;
+ top: 0%;
+ left: 0%;
+ width: 100%;
+ height: 100%;
+}
+
+
+#timer {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#timer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px  1em;
+  margin-bottom: 0;
+}
+
+
+.timer-item p{
+  font-size: 28px;
+}
+.timer-item{
+  border: 2px solid var(--secondary);
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  font-weight: bold;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+.timer-item span{
+  font-size: 60px;
+  background-color: #ff2a6a56;
+  width: 100%;
+  border-bottom: 2px solid var(--secondary);
+}
+.hours{
+  border: 2px solid var(--yellow);
+}
+.hours span{
+  background-color: #ffbf0057;
+  border-bottom: 2px solid var(--yellow);
+}
+.minutes{
+  border: 2px solid var(--green);
+}
+.minutes span{
+  background-color: #aacd529b;
+  border-bottom: 2px solid var(--green);
+}
+.seconds{
+  border: 2px solid var(--blue);
+}
+.seconds span{
+  background-color: #1abaff8b;
+  border-bottom: 2px solid var(--blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------section-halloween---------------------- */
 
 
 
@@ -1813,6 +2033,8 @@ background-color: var(--yellow);
 .news .owl-carousel .item figure{
   overflow: hidden;
   position: relative;
+  border-radius: 14px;
+
 }
 .news .owl-carousel .item figure img{
 object-fit: cover;
@@ -1837,10 +2059,18 @@ left: 25px ;
 top: 25px;
 border-radius: 14px;
 transition: all 0.5s ease;
+transition: .0s ;
+z-index: 1111;
 }
 .news .owl-carousel .item:hover figure .date{
   position: fixed;
+z-index: 1111;
+}
 
+.news .owl-carousel .item .body .top ul li{
+display:flex ;
+align-items: center;
+justify-content:  center ;
 }
 .news .owl-carousel .item .body .top ul li img{
 border-radius: 50%;
@@ -1870,9 +2100,17 @@ display: block;
 text-decoration: underline !important;
 color: var(--blue);
 }
+.news .owl-carousel .item .body .top ul li:nth-child(2){
+width: 20px;
+height: 100%;
+display: flex;
+align-items: center;
+margin-right: 12px;
+}
 .news .owl-carousel .item .body .top ul li .chat{
 width: 20px;
 height: 20px;
+border-radius: 0%;
 }
 .news .owl-carousel .item .body .main h3{
 font-weight: bold;
@@ -2558,6 +2796,16 @@ background-color: white;
 }
 
 
+.news .owl-carousel .item figure .date {
+  padding: 3px 8px;
+  position: absolute;
+  border: 1px solid rgb(200, 147, 2);
+  left: 25px;
+  top: 25px;
+  font-size:.5rem;
+}
+
+
 
 }
 
@@ -2607,6 +2855,76 @@ padding-left: 12px !important;
 .rating-box{
   width: 100%;
 }
+
+
+
+
+
+/* ------------------------section-halloween---------------------- */
+
+
+.halloween .date-btn{
+ font-size: .6rem;
+}
+.halloween h1{
+  font-size: 20px;
+}
+
+
+
+
+#timer {
+  flex-wrap: wrap;
+}
+
+
+.timer-item p{
+  font-size: 1rem;
+}
+.timer-item{
+  width: 100px;
+}
+.timer-item span{
+  font-size: 2rem;
+  background-color: #ff2a6a56;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+  width: 100%;
+  border-bottom: 2px solid var(--secondary);
+}
+.hours{
+  border: 2px solid var(--yellow);
+}
+.hours span{
+  background-color: #ffbf0057;
+  border-bottom: 2px solid var(--yellow);
+}
+.minutes{
+  border: 2px solid var(--green);
+}
+.minutes span{
+  background-color: #aacd529b;
+  border-bottom: 2px solid var(--green);
+}
+.seconds{
+  border: 2px solid var(--blue);
+}
+.seconds span{
+  background-color: #1abaff8b;
+  border-bottom: 2px solid var(--blue);
+}
+
+
+
+/* ------------------------section-halloween---------------------- */
+
+
+
+
+
+
 
 }
 
